@@ -78,8 +78,8 @@ function getHeading() {
     .padStart(3, '0');
 }
 
-function getGate() {
-  const t = ['A', 'B', 'C'][getRandomInt(2)];
+function getTrack() {
+  const t = ['1', '2'][getRandomInt(2)];
   const g = getRandomInt(30);
   return `${t}${g}`;
 }
@@ -134,7 +134,7 @@ app.use('/api/arrivals', (req, res) => {
       airline: getAirline(),
       flight: getFlight(),
       city: getCity(),
-      gate: getGate(),
+      gate: getTrack(),
       scheduled: getTime()
     };
 

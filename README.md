@@ -1,6 +1,4 @@
-# Virtual Split-Flap Display
-
-![Screenshot](thumbnail.png)
+# DigiBoard
 
 This is a simulation of a split-flap display (often called a Solari board) designed to run in a web browser. It dynamically loads JSON data from a data source and renders that data as characters and images on the board. Individual characters are animated using CSS sprites.
 
@@ -45,7 +43,7 @@ The individual elements' animation speed is set in the fadeIn() and fadeOut() fu
 
 The example Node app at `app.js` exposes an API route at `/api/arrivals` which demonstrates sending data to `split-flap.js`.
 
-```
+```json
 {
     data: [
         {
